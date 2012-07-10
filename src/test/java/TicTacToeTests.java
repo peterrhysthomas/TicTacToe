@@ -1,42 +1,39 @@
 import static org.junit.Assert.*;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class TicTacToeTests {
 
 	@Test
 	public void gameIsOverWhenAllCellsTaken() {
-		boolean allCellsTaken = true;
-		assertTrue(allCellsTaken );
+		String cells = "XOXOXXOOX";
+		boolean gameOver = !cells.contains("-");
+		assertTrue(gameOver);
 	}
 	
 	@Test
+	@Ignore
 	public void gameIsOverWhenAColumnIsTakenByAPlayer(){
-		boolean columnTaken = true;
-		assertTrue(columnTaken);
 	}
 
 	@Test
+	@Ignore
 	public void gameIsOverWhenARowIsTakenByAPlayer(){
-		boolean rowTaken = true;
-		assertTrue(rowTaken);
 	}
 	
 	@Test
+	@Ignore
 	public void gameIsOverWhenADiagonalIsTakenByAPlayer(){
-		boolean diagonalTaken = true;
-		assertTrue(diagonalTaken);
 	}
 	
 	@Test
+	@Ignore
 	public void gameContinuesIfThereAreEmptyCells(){
-		boolean emptyCells = true;
-		assertTrue(emptyCells);
 	}
 	
 	@Test
+	@Ignore
 	public void playerCanTakeCellWhichIsEmpty(){
-		boolean notTaken = true;
-		assertTrue(notTaken);
 	}
 }
